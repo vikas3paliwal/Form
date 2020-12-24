@@ -91,19 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               return null;
                             },
                             onSaved: (value) {
-                              _student = Student(
-                                  gen: _student.gen,
-                                  dateOfBirth: _student.dateOfBirth,
-                                  name: value,
-                                  address: _student.address,
-                                  course: _student.course,
-                                  fatherName: _student.fatherName,
-                                  group: _student.group,
-                                  institute: _student.institute,
-                                  mobileNo: _student.mobileNo,
-                                  motherName: _student.motherName,
-                                  nationality: _student.nationality,
-                                  instituteId: _student.instituteId);
+                              _student.name = value;
                             },
                           ),
                         ),
@@ -150,21 +138,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        setState(() {
-                          _student = Student(
-                              gen: _student.gen,
-                              dateOfBirth: _student.dateOfBirth,
-                              name: _student.name,
-                              address: _student.address,
-                              course: _student.course,
-                              fatherName: value,
-                              group: _student.group,
-                              institute: _student.institute,
-                              mobileNo: _student.mobileNo,
-                              motherName: _student.motherName,
-                              nationality: _student.nationality,
-                              instituteId: _student.instituteId);
-                        });
+                        setState(
+                          () {
+                            _student.fatherName = value;
+                          },
+                        );
                       },
                     ),
                     SizedBox(
@@ -181,19 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        _student = Student(
-                            gen: _student.gen,
-                            dateOfBirth: _student.dateOfBirth,
-                            name: _student.name,
-                            address: _student.address,
-                            course: _student.course,
-                            fatherName: _student.fatherName,
-                            group: _student.group,
-                            institute: _student.institute,
-                            mobileNo: _student.mobileNo,
-                            motherName: value,
-                            nationality: _student.nationality,
-                            instituteId: _student.instituteId);
+                        _student.motherName = value;
                       },
                     ),
                     SizedBox(
@@ -225,19 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        _student = Student(
-                            gen: _student.gen,
-                            dateOfBirth: _student.dateOfBirth,
-                            name: _student.name,
-                            address: _student.address,
-                            course: _student.course,
-                            fatherName: _student.fatherName,
-                            group: _student.group,
-                            institute: value,
-                            mobileNo: _student.mobileNo,
-                            motherName: _student.motherName,
-                            nationality: _student.nationality,
-                            instituteId: _student.instituteId);
+                        _student.institute = value;
                       },
                     ),
                     SizedBox(
@@ -279,19 +233,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        _student = Student(
-                            gen: _student.gen,
-                            dateOfBirth: _student.dateOfBirth,
-                            name: _student.name,
-                            address: _student.address,
-                            course: value,
-                            fatherName: _student.fatherName,
-                            group: _student.group,
-                            institute: _student.institute,
-                            mobileNo: _student.mobileNo,
-                            motherName: _student.motherName,
-                            nationality: _student.nationality,
-                            instituteId: _student.instituteId);
+                        _student.course = value;
                       },
                     ),
                     SizedBox(
@@ -309,19 +251,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        _student = Student(
-                            gen: _student.gen,
-                            dateOfBirth: _student.dateOfBirth,
-                            name: _student.name,
-                            address: value,
-                            course: _student.course,
-                            fatherName: _student.fatherName,
-                            group: _student.group,
-                            institute: _student.institute,
-                            mobileNo: _student.mobileNo,
-                            motherName: _student.motherName,
-                            nationality: _student.nationality,
-                            instituteId: _student.instituteId);
+                        _student.address = value;
                       },
                     ),
                     SizedBox(
@@ -338,19 +268,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        _student = Student(
-                            gen: _student.gen,
-                            dateOfBirth: _student.dateOfBirth,
-                            name: _student.name,
-                            address: _student.address,
-                            course: _student.course,
-                            fatherName: _student.fatherName,
-                            group: _student.group,
-                            institute: _student.institute,
-                            mobileNo: _student.mobileNo,
-                            motherName: _student.motherName,
-                            nationality: _student.nationality,
-                            instituteId: value);
+                        _student.instituteId = value;
                       },
                     ),
                     SizedBox(
@@ -374,19 +292,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        _student = Student(
-                            gen: _student.gen,
-                            dateOfBirth: _student.dateOfBirth,
-                            name: _student.name,
-                            address: _student.address,
-                            course: _student.course,
-                            fatherName: _student.fatherName,
-                            group: _student.group,
-                            institute: _student.institute,
-                            mobileNo: int.parse(value),
-                            motherName: _student.motherName,
-                            nationality: _student.nationality,
-                            instituteId: _student.instituteId);
+                        _student.mobileNo = int.parse(value);
                       },
                     ),
                     SizedBox(
@@ -403,19 +309,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return null;
                       },
                       onSaved: (value) {
-                        _student = Student(
-                            gen: _student.gen,
-                            dateOfBirth: _student.dateOfBirth,
-                            name: _student.name,
-                            address: _student.address,
-                            course: _student.course,
-                            fatherName: _student.fatherName,
-                            group: value,
-                            institute: _student.institute,
-                            mobileNo: _student.mobileNo,
-                            motherName: _student.motherName,
-                            nationality: _student.nationality,
-                            instituteId: _student.instituteId);
+                        _student.group = value;
                       },
                     ),
                     SizedBox(
